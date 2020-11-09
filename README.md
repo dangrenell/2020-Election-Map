@@ -15,5 +15,5 @@ The lightness of each color in this county map shows the number of voters in eac
 ### Notes
 - Alaska reports electoral districts and not counties. I need to find a mapping of EDs to counties.
 - Some counties are being lost in the merge, while others have no reported data yet.
-- Maine reports data by town, not county, and so is getting lost.
+- Something still seems fishy about Maine, but I haven't nailed it down yet.
 - Generate an option to display missing districts in yellow.
