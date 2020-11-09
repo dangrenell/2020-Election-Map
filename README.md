@@ -12,7 +12,7 @@ The lightness of each color in this county map shows the number of voters in eac
 - Census shape data from [the census website](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html)
 - County/town returns from the [NYT coverage](https://www.nytimes.com/interactive/2020/11/03/us/elections/results-president.html?action=click&module=Spotlight&pgtype=Homepage)
 
-# Notes
+### Notes
 - Alaska reports electoral districts and not counties. I need to find a mapping of EDs to counties.
 - Some counties are being lost in the merge, while others have no reported data yet.
 - Maine reports data by town, not county, and so is getting lost.
