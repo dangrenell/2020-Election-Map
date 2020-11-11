@@ -694,6 +694,9 @@ def main():
     all_state_df['County'] = all_state_df.apply(lambda x: county_correction_dict[(
         x['State'], x['County'])] if (x['State'], x['County']) in county_correction_dict else x, axis=1)
 
+    all_state_df = all_state_df.dropna(
+        subset=['Biden Share', 'Trump Share', 'b', 'r', 'g', 'rgb'])
+
     all_state_df.to_csv('County level data.csv')
 
     # one_df = shape_df.merge(all_state_df)
