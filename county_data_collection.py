@@ -11,14 +11,14 @@ from datetime import datetime
 def logger(func_name, message):
     now = datetime.now()
     with open('log.txt', 'a') as file:
-        log_message = f'{now}: "{message}" from "{func_name}".'
+        log_message = f'{now}: "{message}" from "{func_name}\n".'
         file.write(log_message)
 
 
 def error_logging(function):
     def wrapper(*arg, **kargs):
         try:
-            function(*arg, **kargs)
+            return function(*arg, **kargs)
 
         except Exception as e:
             logger(function, e)
